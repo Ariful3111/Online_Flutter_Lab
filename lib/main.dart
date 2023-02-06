@@ -9,12 +9,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       // Application name
       title: 'Flutter Hello World',
-      // Application theme data, you can set the colors for the application as
-      // you want
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      // A widget which will be started on application startup
       home: MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }
@@ -30,6 +28,7 @@ class MyHomePage extends StatelessWidget {
       appBar: AppBar(
         // The title text which will be shown on the action bar
         title: Text(title),
+        centerTitle: true,
       ),
       body: Center(
         child: Text(
@@ -39,3 +38,4 @@ class MyHomePage extends StatelessWidget {
     );
   }
 }
+
